@@ -18,6 +18,11 @@
       html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
       html{--background: white; --text: black;}
+
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
     </style>
     
   </head>
@@ -28,7 +33,7 @@
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
   
       <div class="topo" style="float: right; margin-right: 30px;">
-        <input onclick="temaDark()" name="tema" type="checkbox" class="toggle-dark-mode"/>
+        <input onclick="darkMode()" name="tema" type="checkbox" class="toggle-dark-mode"/>
       </div>
       <!-- The Grid -->
       <div class="w3-row-padding">
