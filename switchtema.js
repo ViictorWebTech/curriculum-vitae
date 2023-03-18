@@ -10,12 +10,13 @@ const tema = {
 };
 
 
-  
+  function temaDark() {
 const darkModeToggle = document.querySelector('input[name=tema]');
 darkModeToggle.addEventListener('change', function({ target }) {
   setTema(target.checked ? 'dark' : 'light');
 });
-
+}
+ 
 function setTema(novoTema) {
     const CorTema = tema[novoTema]; // Seleciona o tema para aplicar
   
