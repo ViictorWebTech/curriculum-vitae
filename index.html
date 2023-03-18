@@ -17,12 +17,40 @@
     <style>
       html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
-      html{--background: white; --text: black;}
+     body{
+      transition: background 0.5s linear, color 0.5s linear;
+     }
 
-      .dark-mode {
-        background-color: black;
-        color: white;
-      }
+     body.dark{
+      background-color: black;
+      color: white;
+     }
+
+     .topo{
+      position: fixed;
+      top: 10px;
+      right: 10px;
+     }
+     
+     label{
+      background-color: black;
+      border-radius: 40%;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.5s linear;
+     }
+
+     body.dark label{
+      background-color: white;
+     }
+
+     input{
+      visibility: hidden;
+     }
+
     </style>
     
   </head>
@@ -32,8 +60,9 @@
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
   
-      <div class="topo" style="float: right; margin-right: 30px;">
-        <input onclick="darkMode()" name="tema" type="checkbox" class="toggle-dark-mode"/>
+      <div class="topo">
+        <input name="btn" type="checkbox" id="btn"/>
+        <label for="btn"></label>
       </div>
       <!-- The Grid -->
       <div class="w3-row-padding">
