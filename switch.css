@@ -6,13 +6,14 @@ body{
     display: flex;
     align-items: end;
     justify-content: end;
+    margin-bottom: 30px;
 }
 
 body.dark{
     background: #232c35;
 }
 
-.chekbox{
+.checkbox{
     opacity: 0;
     position: absolute;
 }
@@ -48,7 +49,7 @@ body.dark{
     transition: transform 0.2s linear;
 }
 
-.chekbox:checked + .label .ball{
+.chekbox:checked + .label .ball {
     transform: translateX(24px);
 }
 
