@@ -12,58 +12,27 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="switch.css">
 
     <style>
       html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-
-     body{
-      transition: background 0.5s linear, color 0.5s linear;
-     }
-
-     body.dark{
-      background-color: black;
-      color: white;
-     }
-
-     .topo{
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      padding-bottom: 10px;
-     }
-     
-     label{
-      background-color: black;
-      border-radius: 40%;
-      display: inline-block;
-      width: 25px;
-      height: 25px;
-      cursor: pointer;
-      user-select: none;
-      transition: background 0.5s linear;
-     }
-
-     body.dark label{
-      background-color: white;
-     }
-
-     input{
-      visibility: hidden;
-     }
-
     </style>
     
   </head>
 
   <body class="w3-light-grey" cz-shortcut-listen="true">
     <script src="switchtema.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js"></script>
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
   
       <div class="topo">
-        <input name="btn" type="checkbox" id="btn"/>
-        <label for="btn"></label>
+        <input type="checkbox" class="checkbox" id="chk"/>
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
       </div>
       <!-- The Grid -->
       <div class="w3-row-padding">
