@@ -1,6 +1,5 @@
 body{
     background-color: #fafafa;
-    transition: background 0.2s linear;
 }
 .topo{
     display: flex;
@@ -10,9 +9,11 @@ body{
     margin-bottom: 30px;
 }
 
-body.dark{
+
+.dark{
     background-color: #232c35;
 }
+
 
 .checkbox{
     opacity: 0;
